@@ -46,6 +46,7 @@ public class Agenda {
 
         TypedQuery<Pessoa> query = entityManager.createQuery("SELECT p FROM Pessoa as p", Pessoa.class);
         List<Pessoa> lista = query.getResultList();
+        System.out.println("=====================================");
         percorrerLista(lista);
         System.out.println("=====================================");
     }
