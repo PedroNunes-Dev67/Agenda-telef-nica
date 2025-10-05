@@ -8,9 +8,9 @@ public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "nome", nullable = false)
+    @Column(name = "nome", nullable = true)
     private String nome;
-    @Column(name = "telefone", nullable = false)
+    @Column(name = "telefone", nullable = true)
     private String telefone;
 
     public Pessoa() {
